@@ -1,1 +1,72 @@
-<h1>CoPaw pages 初始化成功</h1>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CoPaw Pages</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #020617;
+      --card: rgba(15,23,42,0.9);
+      --border: rgba(148,163,184,0.4);
+      --title: #e5e7eb;
+      --accent: #38bdf8;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0, #020617 55%, #000 100%);
+      color: var(--title);
+    }
+    .card {
+      padding: 24px 22px 20px;
+      border-radius: 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.55);
+      max-width: 560px;
+      width: calc(100% - 32px);
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing: 0.03em;
+    }
+    .tagline {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .status {
+      margin-top: 8px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      background: rgba(15,118,110,0.15);
+      border: 1px solid rgba(45,212,191,0.35);
+      color: #a5f3fc;
+    }
+    code {
+      font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>CoPaw pages 初始化成功</h1>
+    <div class="tagline">静态文章将以 HTML 形式托管在这个域名下，用于企业微信「内页全文」展示。</div>
+    <div class="status">
+      <div>当前站点已可正常访问。后续由 CoPaw 生成的文章页会使用类似：</div>
+      <div><code>https://copaw-pages.lethe123.workers.dev/&lt;随机ID&gt;.html</code></div>
+    </div>
+  </div>
+</body>
+</html>
